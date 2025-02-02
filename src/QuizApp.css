@@ -1,0 +1,175 @@
+/* General styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: "Arial", sans-serif;
+    margin: 0;
+  }
+  
+  /* Main container */
+  .quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Start Quiz Button */
+  .start-button {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .start-button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Question Card */
+  .question-card {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+  }
+  
+  /* Question Text */
+  .question-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Options Container */
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  
+  /* Option Buttons */
+  .option-button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .option-button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Different colors for answer buttons */
+  .option-button:nth-child(1) {
+    background: #ff4757;
+  }
+  .option-button:nth-child(1):hover {
+    background: #e84118;
+  }
+  
+  .option-button:nth-child(2) {
+    background: #1e90ff;
+  }
+  .option-button:nth-child(2):hover {
+    background: #007bff;
+  }
+  
+  .option-button:nth-child(3) {
+    background: #2ecc71;
+  }
+  .option-button:nth-child(3):hover {
+    background: #27ae60;
+  }
+  
+  .option-button:nth-child(4) {
+    background: #f1c40f;
+  }
+  .option-button:nth-child(4):hover {
+    background: #f39c12;
+  }
+  
+  /* Score Summary */
+  .results-summary {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .score-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  /* Restart Button */
+  .restart-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .restart-button:hover {
+    background: #495057;
+    transform: scale(1.05);
+  }
+  
+  /* Loading & Error Messages */
+  .loading,
+  .error {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d9534f;
+    text-align: center;
+  }
+  
+  
